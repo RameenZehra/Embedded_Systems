@@ -36,7 +36,7 @@ Start:
       mov A, #0; 
       mov R0, #0 ; 
       mov R1, #2 ;
-Set_Bit:
+Toggle_Bit:
       CPL P2.0 ;SET Port2 Pin1 to high
 First:  
       INC A ; A=A+1 (1탎)
@@ -46,7 +46,7 @@ First:
       CJNE R0, #0, First; (2탎)
       DEC R1; R1=R1-1 (1탎)
       CJNE R1, #0, First; (2탎)
-Clear_Bit:
+Exit:
      jmp Start;
 ;====================================================================
       END
