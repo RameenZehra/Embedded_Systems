@@ -38,6 +38,6 @@ Start:
      SETB TR0 ;           Start Timer
 Show: 
       mov P2, TL0 ;      Copied Timer0 register value in P2
-      jmp show;           Continuously Copy Timer0 register value in P2
+      jmp Show;           Continuously Copy Timer0 register value in P2
 ;====================================================================
       END
